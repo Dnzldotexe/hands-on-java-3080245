@@ -45,11 +45,12 @@ public class Account {
     else{
       double newBalance = balance + amount;
       setBalance(newBalance);
+      DataSource.updateAccountBalance(id, newBalance);
     }
   }
 
   public void withdraw(double amount){
-    b
+    
   }
 
 }
